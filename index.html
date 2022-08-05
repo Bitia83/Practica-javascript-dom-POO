@@ -12,55 +12,32 @@ integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmV
 crossorigin="anonymous">
 </head>
 <body>
-  <div class="container my-5">
-    <h1>estudiantes y profesores</h1>
-    <div class="alert alert-danger d-none">
-      Por favor ingrese todos los datos
-  </div>
-    <form id="formulario">
-      <input class="form-control mb-2" type="text" name="nombre" placeholder="Ingrese nombre" required/>
-      <input class="form-control mb-2" type="number" name="edad" placeholder="Ingrese edad" required/>
-      <select class="form-select mb-2" aria-label="Default select example" name="opcion">
-        
-        <option value="Estudiante" selected>Estudiante</option>
-        <option value="Profesor">Profesor</option>
-      
-      </select>
-      <button class="btn btn-primary" type="submit">agregar</button>
-    </form>
+ <div class="container my-5">
+  <h1>Todo app</h1>
+  <section class="alert alert-danger d-none">todo vacio
 
-    <section class="row mt-3">
+  </section>
+  
+  <form id="formulario">
+    <input type="text" name="nombre" placeholder="ingrese tarea"
+    class="form-control mb-2"/>
+    <button class="btn btn-primary w-100" type="submit">agregar</button>
+  </form>
 
-      <div class="col-6" id="cardEstudiantes"></div>
-      <div class="col-6" id="cardProfesores"></div>
-   
-    </section>
-  </div>
-
-  <template id="templateEstudiante">
-    <article class="card mb-2">
-      <div class="card-body">
-        <h5>
-          <span class="text-primary">Nombre</span>
-          <span class="badge bg-success">Aprobado</span>
-        </h5>
-        <h6></h6>
-        <p class="lead">edad</p>
-        <button class="btn btn-success">Aprobar</button>
-        <button class="btn btn-danger">Reprobar</button>
-      </div>
-    </article>
-  </template>
-
-  <template id="templateProfesor">
-    <article class="card mb-2 bg-dark text-white">
-    <div class="card-body">
-      <h5>nombre</h5>
-      <h6>profesor</h6>
-      <p class="lead">Edad</p>
+  <section id="pintarTodo" class="mt-3">
+  
+   </section>
+ </div>
+ 
+ 
+ <template id="templateTodo">
+  <article class="alert alert-warning d-flex align-items-center justify-content-between">
+    <p class="lead mb-0">Lorem</p>
+    <div>
+      <button class="btn btn-danger">borrar</button>
     </div>
   </article>
-</template>
+ </template>
   <script src="app.js"></script> 
 </body>
 </html>
